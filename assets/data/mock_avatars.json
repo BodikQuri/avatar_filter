@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "age": 24,
+        "name": "Emma",
+        "gender": "women",
+        "pose": "standing",
+        "image_mock": "avatarMock-0.png"
+    },
+    {
+        "id": 2,
+        "age": 38,
+        "name": "Michael",
+        "gender": "men",
+        "pose": "sitting",
+        "image_mock": "avatarMock-1.png"
+    },
+    {
+        "id": 3,
+        "age": 21,
+        "name": "Sophia",
+        "gender": "women",
+        "pose": "selfie",
+        "image_mock": "avatarMock-2.png"
+    },
+    {
+        "id": 4,
+        "age": 45,
+        "name": "James",
+        "gender": "men",
+        "pose": "carSelfie",
+        "image_mock": "avatarMock-3.png"
+    },
+    {
+        "id": 5,
+        "age": 29,
+        "name": "Olivia",
+        "gender": "women",
+        "pose": "walking",
+        "image_mock": "avatarMock-4.png"
+    },
+    {
+        "id": 6,
+        "age": 52,
+        "name": "Robert",
+        "gender": "men",
+        "pose": "standing",
+        "image_mock": "avatarMock-5.png"
+    },
+    {
+        "id": 7,
+        "age": 33,
+        "name": "Isabella",
+        "gender": "women",
+        "pose": "sitting",
+        "image_mock": "avatarMock-6.png"
+    },
+    {
+        "id": 8,
+        "age": 27,
+        "name": "William",
+        "gender": "men",
+        "pose": "selfie",
+        "image_mock": "avatarMock-7.png"
+    },
+    {
+        "id": 9,
+        "age": 41,
+        "name": "Ava",
+        "gender": "women",
+        "pose": "walking",
+        "image_mock": "avatarMock-0.png"
+    },
+    {
+        "id": 10,
+        "age": 19,
+        "name": "David",
+        "gender": "men",
+        "pose": "carSelfie",
+        "image_mock": "avatarMock-1.png"
+    },
+    {
+        "id": 11,
+        "age": 63,
+        "name": "Charlotte",
+        "gender": "women",
+        "pose": "standing",
+        "image_mock": "avatarMock-2.png"
+    },
+    {
+        "id": 12,
+        "age": 35,
+        "name": "Benjamin",
+        "gender": "men",
+        "pose": "sitting",
+        "image_mock": "avatarMock-3.png"
+    },
+    {
+        "id": 13,
+        "age": 28,
+        "name": "Mia",
+        "gender": "women",
+        "pose": "selfie",
+        "image_mock": "avatarMock-4.png"
+    },
+    {
+        "id": 14,
+        "age": 48,
+        "name": "Daniel",
+        "gender": "men",
+        "pose": "walking",
+        "image_mock": "avatarMock-5.png"
+    },
+    {
+        "id": 15,
+        "age": 22,
+        "name": "Amelia",
+        "gender": "women",
+        "pose": "carSelfie",
+        "image_mock": "avatarMock-6.png"
+    },
+    {
+        "id": 16,
+        "age": 56,
+        "name": "Matthew",
+        "gender": "men",
+        "pose": "standing",
+        "image_mock": "avatarMock-7.png"
+    }
+]
