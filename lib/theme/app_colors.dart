@@ -56,18 +56,18 @@ class AppColors extends ThemeExtension<AppColors> {
   }
 }
 
-const appLightColors = AppColors(
+final appLightColors = AppColors(
   brightness: Brightness.light,
   primary: Colors.white,
   whiteMain: Colors.white,
   black: Colors.black,
-  greyMid: Color(0xFFCAD4DD),
-  greyLight: Color(0xFFF2F4F6),
+  greyMid: const Color(0xFFCAD4DD),
+  greyLight: const Color(0xFFF2F4F6),
   avatarGradient: LinearGradient(
     colors: [
-      Color(0xff000000),
-      // ignore: use_full_hex_values_for_flutter_colors
-      Color(0xff000000cc),
+      Colors.black.withValues(alpha: 0.3),
+      Colors.black.withValues(alpha: 0.05),
+      Colors.black.withValues(alpha: 0.0),
     ],
     begin: Alignment.bottomCenter,
     end: Alignment.topCenter,

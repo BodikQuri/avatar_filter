@@ -52,7 +52,7 @@ class _AvatarWidgetState extends State<AvatarWidget> {
           decoration: BoxDecoration(
             border: Border.all(color: borderColor, width: 2),
             borderRadius: borderRadius,
-            gradient: appColors.avatarGradient,
+
             image: widget.avatar.imageUrl != null
                 ? DecorationImage(
                     image: NetworkImage(widget.avatar.imageUrl!),
@@ -68,43 +68,49 @@ class _AvatarWidgetState extends State<AvatarWidget> {
                     fit: BoxFit.cover,
                   ),
           ),
-          padding: const EdgeInsets.all(8),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text(
-                widget.avatar.name ?? '',
-                style: textTheme.bodyMedium?.copyWith(
-                  color: appColors.whiteMain,
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: appColors.avatarGradient,
+              borderRadius: borderRadius,
+            ),
+            padding: const EdgeInsets.all(8),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text(
+                  widget.avatar.name ?? '',
+                  style: textTheme.bodyMedium?.copyWith(
+                    color: appColors.whiteMain,
+                  ),
                 ),
-              ),
-              Row(
-                children: [
-                  if (widget.avatar.gender != null)
-                    Text(
-                      widget.avatar.gender!.formalName,
-                      style: textTheme.labelSmall?.copyWith(
-                        color: appColors.whiteMain,
+                Row(
+                  children: [
+                    if (widget.avatar.gender != null)
+                      Text(
+                        widget.avatar.gender!.formalName,
+                        style: textTheme.labelSmall?.copyWith(
+                          color: appColors.whiteMain,
+                        ),
                       ),
-                    ),
-                  if (widget.avatar.gender != null && widget.avatar.age != null)
-                    Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 4),
-                      width: 1,
-                      height: 1,
-                      decoration: BoxDecoration(color: appColors.whiteMain, shape: BoxShape.circle),
-                    ),
-                  if (widget.avatar.age != null)
-                    Text(
-                      widget.avatar.age.toString(),
-                      style: textTheme.labelSmall?.copyWith(
-                        color: appColors.whiteMain,
+                    if (widget.avatar.gender != null && widget.avatar.age != null)
+                      Container(
+                        margin: const EdgeInsets.symmetric(horizontal: 4),
+                        width: 1,
+                        height: 1,
+                        decoration: BoxDecoration(color: appColors.whiteMain, shape: BoxShape.circle),
                       ),
-                    ),
-                ],
-              ),
-            ],
+                    if (widget.avatar.age != null)
+                      Text(
+                        widget.avatar.age.toString(),
+                        style: textTheme.labelSmall?.copyWith(
+                          color: appColors.whiteMain,
+                        ),
+                      ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
